@@ -1,0 +1,2 @@
+function t(t){return parseInt(t.replace(/[^0-9.-]+/g,""),10)}document.addEventListener("DOMContentLoaded",function(){var a,e=document.querySelector("ul");null!==e&&((a=Array.from(e.children)).sort(function(a,e){var n=t(a.dataset.salary);return t(e.dataset.salary)-n}),a.forEach(function(t){return e.appendChild(t)})),Array.from(e.children).map(function(a){return{name:a.textContent.trim(),position:a.dataset.position,salary:t(a.dataset.salary),age:parseInt(a.dataset.age,10)}})});
+//# sourceMappingURL=index.4af1396e.js.map
